@@ -104,48 +104,57 @@ const students = [
     {
         Id: '213',
         name: 'Marco della Rovere',
-        grades: '78',
+        grades: 78,
     },
     {
         Id: '110',
         name: 'Paola Cortellessa',
-        grades: '96',
+        grades: 96,
     },
     {
         Id: '250',
         name: 'Andrea Mantegna',
-        grades: '48',
+        grades: 48,
     },
     {
         Id: '145',
         name: 'Gaia Borromini',
-        grades: '74',
+        grades: 74,
     },
     {
         Id: '196',
         name: 'Luigi Grimaldello',
-        grades: '68',
+        grades: 68,
     },
     {
         Id: '102',
         name: 'Piero della Francesca',
-        grades: '50',
+        grades: 50,
     },
     {
         Id: '120',
         name: 'Francesca da Polenta',
-        grades: '84',
+        grades: 84,
     },
 ];
 console.log(students);
 
-
-const studentsUp = students.map((element) => {
-    return element.name.toUpperCase();
-
-});
+//lista con nomi in maiuscolo (ho tolto le graffe e usato una sintassi più sinteitca)
+const studentsUp = students.map((element) => element.name.toUpperCase());
 
 console.log(studentsUp)
+
+
+
+
+//lista con voti > 70
+const grades = students.filter((element) => element.grades >= 70);
+
+console.log(grades);
+
+
+
+
 
 
 
