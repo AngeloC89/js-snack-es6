@@ -96,10 +96,6 @@ Id  Name                Grades
 120 Francesca da Polenta    84
  */
 
-
-
-
-
 const students = [
     {
         Id: '213',
@@ -141,16 +137,17 @@ console.log(students);
 
 //lista con nomi in maiuscolo (ho tolto le graffe e usato una sintassi più sinteitca)
 const studentsUp = students.map((element) => element.name.toUpperCase());
-
 console.log(studentsUp)
-
-
 
 
 //lista con voti > 70
 const grades = students.filter((element) => element.grades >= 70);
-
 console.log(grades);
+
+
+//lista con voti maggiori di 70 e ID maggiore di 120.
+const idBig = students.filter((element) => element.grades >= 70 && element.Id >= 120);
+console.log(idBig)
 
 
 
