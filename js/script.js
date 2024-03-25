@@ -20,6 +20,10 @@ Generiamo e stampiamo in console la lista per i segnaposto.
 
 
 
+
+
+
+/*
 //il primo dato è il nome del tavolo, quindi mi creo una costante con il nome del tavolo
 const tableName = 'Tavolo Vip';
 
@@ -72,6 +76,10 @@ Posto: ${guest.posto}`;
     list.appendChild(liEl);
 });
 document.body.appendChild(list);
+*/
+
+
+
 
 
 /**
@@ -96,6 +104,7 @@ Id  Name                Grades
 120 Francesca da Polenta    84
  */
 
+/*
 const students = [
     {
         Id: '213',
@@ -148,7 +157,7 @@ console.log(grades);
 //lista con voti maggiori di 70 e ID maggiore di 120.
 const idBig = students.filter((element) => element.grades >= 70 && element.Id >= 120);
 console.log(idBig)
-
+*/
 
 
 
@@ -201,6 +210,19 @@ const bicycles = [
 //creo una variabile (che in questo caso è un oggetto) estratto dall'aray bicycles... lo userò come riferimento di partenza
   let total = bicycles[0];
 //   console.log(total.peso);
+
+
+//uso il ciclo "for of" per iterare l'array di oggetti e cercare la proprietà .peso più bassa 
+for(let bici of bicycles){
+    if(bici.peso < total.peso){
+        total = bici
+    }
+  };
+
+const {nome, peso} = total;
+
+console.log('La bici di nome ' + nome + ' è la più leggera');
+console.log('Il suo peso, infatti, equivale a ' + peso + 'kg.');
 
 
 
