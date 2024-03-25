@@ -221,8 +221,8 @@ for(let bici of bicycles){
 
 const {nome, peso} = total;
 
-console.log('La bici di nome ' + nome + ' è la più leggera');
-console.log('Il suo peso, infatti, equivale a ' + peso + 'kg.');
+console.log(`La bici di nome  ${nome} è la più leggera.
+Il suo peso, infatti, equivale a ${peso} kg.`);
 
 
 
