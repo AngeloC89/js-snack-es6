@@ -154,6 +154,57 @@ console.log(idBig)
 
 
 
+//Snack 3************************************************************************************************
+const bicycles = [
+    {
+      nome: "Bianchi Oltre XR4",
+      peso: 7.8, // in kg
+    },
+    {
+      nome: "Trek Émonda SLR",
+      peso: 6.8, // in kg
+    },
+    {
+      nome: "Specialized Tarmac SL7",
+      peso: 7.2, // in kg
+    },
+    {
+      nome: "Cannondale SuperSix EVO Hi-Mod",
+      peso: 8.1, // in kg
+    },
+    {
+      nome: "Pinarello Dogma F12",
+      peso: 7.4, // in kg
+    },
+    {
+      nome: "Colnago V3Rs",
+      peso: 7.1, // in kg
+    },
+    {
+      nome: "Canyon Aeroad CFR",
+      peso: 7.9, // in kg
+    },
+    {
+      nome: "Giant Propel Advanced SL",
+      peso: 7.5, // in kg
+    },
+    {
+      nome: "Orbea Orca OMX",
+      peso: 7.7, // in kg
+    },
+    {
+      nome: "BMC Teammachine SLR01",
+      peso: 7.3, // in kg
+    },
+  ];
+
+//creo una variabile (che in questo caso è un oggetto) estratto dall'aray bicycles... lo userò come riferimento di partenza
+  let total = bicycles[0];
+//   console.log(total.peso);
+
+
+
+
 
 
 
