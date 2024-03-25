@@ -162,7 +162,7 @@ console.log(idBig)
 
 
 
-
+/*
 //Snack 3************************************************************************************************
 const bicycles = [
     {
@@ -221,10 +221,10 @@ for(let bici of bicycles){
 
 const {nome, peso} = total;
 
-/*
+
 console.log(`La bici di nome  ${nome} è la più leggera.
 Il suo peso, infatti, equivale a ${peso} kg.`);
-*/
+
 const minorB = document.createElement('h3');
 minorB.classList.add('p-5')
 document.body.appendChild(minorB);
@@ -233,6 +233,71 @@ minorB.innerHTML = `
 La bici di nome  ${nome} è la più leggera.
 Il suo peso, infatti, equivale a ${peso} kg.
 `;
+*/
+
+
+
+
+
+
+/** snack 4****************************************************
+ */
+
+const soccerClub = [
+    {
+        name: "Juventus",
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: "Inter",
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: "Milan",
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: "Napoli",
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: "Akragas",
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: "Palermo",
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: "Lazio",
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: "Sampdoria",
+        points: 0,
+        fouls: 0,
+    },
+    // Aggiungi altre squadre come sopra
+];
+
+
+const addNums = soccerClub.map((el) => {
+    let obj = {
+        name: el.name,
+        points: getRndInteger(1, 15),
+        fouls: getRndInteger(1, 15)
+    }
+    return obj
+});
+//nuova array modificata...
+console.log(addNums);
 
 
 
