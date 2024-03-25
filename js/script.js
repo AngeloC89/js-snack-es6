@@ -310,6 +310,18 @@ for(let newAr of soccerClub) {
 console.log(newArray);
 
 
+newArray.forEach((el)=> {
+const soccerDisplay = document.createElement('h3');
+soccerDisplay.classList.add('p-2')
+document.body.appendChild(soccerDisplay);
+
+soccerDisplay.innerHTML =  `
+Squadra: ${el.name}
+<br>
+Falli: ${el.fouls}
+`
+
+});
 
 
 
