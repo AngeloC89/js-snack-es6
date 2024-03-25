@@ -288,16 +288,30 @@ const soccerClub = [
 ];
 
 
-const addNums = soccerClub.map((el) => {
-    let obj = {
-        name: el.name,
-        points: getRndInteger(1, 15),
-        fouls: getRndInteger(1, 15)
-    }
-    return obj
+soccerClub.forEach((el) => {
+    el.points = getRndInteger(1, 15);
+    el.fouls = getRndInteger(1, 25);
+
 });
 //nuova array modificata...
-console.log(addNums);
+console.log(soccerClub);
+
+
+let newArray =[];
+
+for(let newAr of soccerClub) {
+    newArray.push({
+       name: newAr.name,
+       fouls: newAr.fouls,
+      
+    })
+};
+
+console.log(newArray);
+
+
+
+
 
 
 
