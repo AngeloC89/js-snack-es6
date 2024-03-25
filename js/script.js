@@ -221,8 +221,18 @@ for(let bici of bicycles){
 
 const {nome, peso} = total;
 
+/*
 console.log(`La bici di nome  ${nome} è la più leggera.
 Il suo peso, infatti, equivale a ${peso} kg.`);
+*/
+const minorB = document.createElement('h3');
+minorB.classList.add('p-5')
+document.body.appendChild(minorB);
+
+minorB.innerHTML = `
+La bici di nome  ${nome} è la più leggera.
+Il suo peso, infatti, equivale a ${peso} kg.
+`;
 
 
 
